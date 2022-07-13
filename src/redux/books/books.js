@@ -12,7 +12,7 @@ const initialState = [{
   author: 'Satya Nadella',
 },
 ];
-let currentId = 0;
+let currentId = 2;
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
