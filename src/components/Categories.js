@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { checkStatus } from '../redux/categories/categories';
 
 const Categories = () => {
+  const categories = useSelector((state) => state.categories);
   const dispatch = useDispatch();
   return (
     <div>
@@ -19,7 +20,15 @@ const Categories = () => {
         {' '}
         <Link to="/categories">Categories</Link>
       </nav>
-      <button type="button" onClick={() => { dispatch(checkStatus()); }}>Check Status</button>
+      <button
+        type="button"
+        onClick={() => {
+          dispatch(checkStatus());
+        }}
+      >
+        Check Status
+      </button>
+      <h4>{categories}</h4>
     </div>
   );
 };

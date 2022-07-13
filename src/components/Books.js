@@ -5,9 +5,6 @@ import BookInput from './BookInput';
 import { remove } from '../redux/books/books';
 
 const Books = () => {
-  /* useSelector((state) => console.log('State: ', state.books[0].title));
-  const title = useSelector((state) => state.books[0].title);
-  const author = useSelector((state) => state.books[0].author); */
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
 
