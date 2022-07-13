@@ -1,8 +1,18 @@
 const ADD = 'bookstore/books/ADD';
 const REMOVE = 'bookstore/books/REMOVE';
 
-const initialState = [];
-let currentId = 0;
+const initialState = [{
+  id: 0,
+  title: 'Zero To One',
+  author: 'Peter Thiel',
+},
+{
+  id: 1,
+  title: 'Hit Refresh',
+  author: 'Satya Nadella',
+},
+];
+let currentId = 2;
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
