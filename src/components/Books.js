@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 // import Book from './Book';
-// import BookInput from './BookInput';
+import BookInput from './BookInput';
 
 const Books = () => {
   /* useSelector((state) => console.log('State: ', state.books[0].title));
@@ -20,6 +20,7 @@ const Books = () => {
           </li>
         ))}
       </ul>
+      <BookInput />
     </div>
   );
 };

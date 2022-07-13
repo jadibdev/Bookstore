@@ -1,6 +1,16 @@
 const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 
-const initialState = [];
+const initialState = [{
+  id: 0,
+  title: 'Zero To One',
+  author: 'Peter Thiel',
+},
+{
+  id: 1,
+  title: 'Hit Refresh',
+  author: 'Satya Nadella',
+},
+];
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
