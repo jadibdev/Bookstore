@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 10px;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -24,4 +24,8 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+.book__container {
+  margin-bottom: 20px;
 }
