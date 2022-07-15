@@ -11,6 +11,7 @@ import store from './redux/configureStore';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Categories from './components/Categories';
+import 'font-awesome/css/font-awesome.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

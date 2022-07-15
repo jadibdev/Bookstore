@@ -4,10 +4,12 @@ body {
 }
 
 .navbar {
+  display: flex;
+  align-items: center;
   height: 5.938rem;
   background: white;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 .navlink {
@@ -49,8 +51,11 @@ body {
 #profile-pic {
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   margin-right: 30px;
+  margin-top: 25px;
+  color: #0290ff;
+  border: 1px solid #888;
+  border-radius: 100%;
 }
 
 .book__container {
@@ -79,6 +84,7 @@ body {
   color: white;
   height: 30px;
   cursor: pointer;
+  border: none;
 }
 
 .form__container {
@@ -88,21 +94,23 @@ body {
 }
 
 .form__container input {
-  width: 150px;
-  height: 20px;
+  width: 300px;
+  height: 25px;
   margin-right: 10px;
 }
 
 .form__container h1 {
   margin-top: 0;
+  color: #888;
 }
 
 #submit__button {
-  width: 150px;
-  height: 25px;
+  width: 200px;
+  height: 33px;
   background: #0290ff;
   color: white;
   cursor: pointer;
+  border: none;
 }
 
 .button__list {

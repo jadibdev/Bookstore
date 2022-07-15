@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/profile-avatar.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => (
   <div className="navbar__container">
@@ -12,7 +13,7 @@ const Navbar = () => (
       </nav>
     </div>
     <div>
-      <img id="profile-pic" alt="profile pic" src={logo} />
+      <FontAwesomeIcon id="profile-pic" icon={faUser} />
     </div>
   </div>
 );
