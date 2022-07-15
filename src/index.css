@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .navbar {
@@ -16,27 +16,27 @@ body {
 }
 
 #logo {
-  font-family: Montserrat;
-    font-size: 1.875rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #0290ff;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
 }
 
 .nav {
   width: 3.688rem;
-    height: 1rem;
-    font-family: Montserrat;
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.9px;
-    color: #121212;
+  height: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
 }
 
 .navbar__container {
@@ -50,7 +50,6 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  margin-top: 10px;
   margin-right: 30px;
 }
 
@@ -79,4 +78,60 @@ body {
   background: #0290ff;
   color: white;
   height: 30px;
+  cursor: pointer;
+}
+
+.form__container {
+  background: white;
+  margin: 50px;
+  padding: 40px;
+}
+
+.form__container input {
+  width: 150px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.form__container h1 {
+  margin-top: 0;
+}
+
+#submit__button {
+  width: 150px;
+  height: 25px;
+  background: #0290ff;
+  color: white;
+  cursor: pointer;
+}
+
+.button__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  gap: 20px;
+}
+
+.button__list button {
+  color: #0290ff;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+#author {
+  color: #0290ff;
+}
+
+#category {
+  color: gray;
+}
+
+#current__chapter {
+  color: gray;
+}
+
+#percentage__par {
+  font-size: 30px;
 }

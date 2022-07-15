@@ -14,8 +14,8 @@ const Book = ({
       .then(() => dispatch(removeBook(id)));
   };
 
-  const generate = () => {
-    const percentage = Math.floor(Math.random() * 100);
+  const generate = (max) => {
+    const percentage = Math.floor(Math.random() * max);
     return percentage;
   };
 
@@ -25,16 +25,24 @@ const Book = ({
         <p id="category">{category}</p>
         <h1 id="title">{title}</h1>
         <p id="author">{author}</p>
-        <button type="button" onClick={handleDelete}>
-          Remove
-        </button>
+        <div>
+          <ul className="button__list">
+            <li><button type="button">Comments</button></li>
+            <li>
+              <button type="button" onClick={handleDelete}>
+                Remove
+              </button>
+            </li>
+            <li><button type="button">Edit</button></li>
+          </ul>
+        </div>
       </div>
       <div className="percentage__container">
         <img id="progress-circle" alt="pending icon" src={progressCircle} />
         <div className="percentage__info">
-          <p>
+          <p id="percentage__par">
             {
-            generate()
+            generate(100)
             }
             %
           </p>
@@ -42,8 +50,12 @@ const Book = ({
         </div>
       </div>
       <div className="chapters">
-        <p>CURRENT CHAPTER</p>
-        <p>Chapter 17</p>
+        <p id="current__chapter">CURRENT CHAPTER</p>
+        <p>
+          Chapter
+          {' '}
+          {generate(20)}
+        </p>
         <button id="update__button" type="button">Update Progress</button>
       </div>
     </div>
